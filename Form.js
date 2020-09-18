@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Control = styled.p`
+export const Control = styled.div`
 	box-sizing: border-box;
   clear: both;
   font-size: 1.6rem;
