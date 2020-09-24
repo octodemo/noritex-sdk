@@ -240,3 +240,154 @@ export const Tag = styled.span`
   padding-right: 0.75em;
   white-space: nowrap;
 `;
+
+export const Tag = styled.span`
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  color: #4a4a4a;
+  display: inline-flex;
+  font-size: 1.2rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  white-space: nowrap;
+`;
+
+export const Tabs = styled.div`
+	-webkit-overflow-scrolling:touch;
+	align-items:stretch;
+	display:flex;
+	font-size:1rem;
+	justify-content:space-between;
+	overflow:hidden;
+	overflow-x:auto;
+	white-space:nowrap;
+	font-size: 16px;
+
+	a {
+		cursor: pointer;
+		align-items:center;
+		border-bottom-color:#dbdbdb;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		color:#4a4a4a;
+		display:flex;
+		justify-content:center;
+		margin-bottom:-1px;
+		padding:.5em 1em;
+		vertical-align:top;
+		transition: all 200ms linear;
+		:hover {
+			border-bottom-color:#858789;
+			color:#363636
+		}
+	}
+	li {
+		display:block;
+	}
+	li.is-active a {
+		border-bottom-color:#112c55;
+		color:#112c55;
+	}
+	ul {
+		align-items:center;
+		border-bottom-color:#dbdbdb;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		display:flex;
+		flex-grow:1;
+		flex-shrink:0;
+		justify-content:flex-start;
+	}
+	ul.is-left {
+		padding-right:.75em;
+	}
+	ul.is-center {
+		flex:none;
+		justify-content:center;
+		padding-left:.75em;
+		padding-right:.75em;
+	}
+	ul.is-right {
+		justify-content:flex-end;
+		padding-left:.75em;
+	}
+`;
+
+export const Modal = styled.div`
+	align-items: center;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	background-color: rgba(10,10,10,.86);
+	&.is-active {
+		display: flex;
+	}
+	text-align: ${props => {
+		if (props.textCenter) {
+			return 'center'
+		} 
+		else if (props.textRight) {
+			return 'right'
+		} 
+		else {
+			return 'left'
+		}
+	}};
+	> div {
+		margin: 0 auto;
+		max-height: calc(100vh - 40px);
+		width: 98%;
+		max-width: 640px;
+	}
+	> button {
+		height: 32px;
+		max-height: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		min-width: 32px;
+		width: 32px;
+		background: none;
+		position: fixed;
+		right: 20px;
+		top: 20px;
+		-webkit-appearance: none;
+		border: none;
+		border-radius: 290486px;
+		cursor: pointer;
+		pointer-events: auto;
+		display: inline-block;
+		font-size: 0;
+		outline: 0;
+		user-select: none;
+		margin: 0;
+		:after, :before {
+			background-color: #fff;
+			content: "";
+			display: block;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			transform-origin: center center;
+		}
+		:before {
+			height: 2px;
+			width: 50%;
+		}
+		:after {
+			height: 50%;
+			width: 2px;
+		}
+	}
+`;
