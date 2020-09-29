@@ -391,3 +391,55 @@ export const Modal = styled.div`
 		}
 	}
 `;
+
+
+export const Preloader = styled.div`
+  min-width: 100px;
+  min-height: 20px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
+  ${props => {
+  	if (props.square) {
+  		return `
+  			border-radius: 6px;
+  			padding-top: 80%;
+  		`
+  	}
+  }}
+
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
