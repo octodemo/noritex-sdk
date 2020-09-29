@@ -399,11 +399,21 @@ export const Preloader = styled.div`
   display: block;
   background-color: rgba(0, 0, 0, 0.11);
   animation: pulse 1.5s ease-in-out 0.5s infinite;
+  & + & {
+  	margin-top: 10px;
+  }
   ${props => {
   	if (props.square) {
   		return `
   			border-radius: 6px;
   			padding-top: 80%;
+  		`
+  	}
+  }}
+  ${props => {
+  	if (props.half) {
+  		return `
+  			max-width: 50%;
   		`
   	}
   }}
