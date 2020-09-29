@@ -394,7 +394,7 @@ export const Modal = styled.div`
 
 
 export const Preloader = styled.div`
-  min-width: 100px;
+	min-width: 100px;
   min-height: 20px;
   display: block;
   background-color: rgba(0, 0, 0, 0.11);
@@ -453,3 +453,7 @@ export const Preloader = styled.div`
       opacity: 1;
     }
   }
+`;
+
+
+  
