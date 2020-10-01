@@ -116,7 +116,7 @@ export const Button = styled.button`
 		height: 16px;
 		display: inline-block;
 		vertical-align: middle;
-		margin-top: -2px;
+		margin-top: -5px;
 		&:not(:only-child):first-child {
 			margin-right: 5px;
 			margin-left: -5px;
