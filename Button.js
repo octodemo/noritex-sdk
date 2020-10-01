@@ -119,9 +119,11 @@ export const Button = styled.button`
 		margin-top: -2px;
 		&:not(:only-child):first-child {
 			margin-right: 5px;
+			margin-left: -5px;
 		}
 		&:not(:only-child):last-child {
 			margin-left: 5px;
+			margin-right: -5px;
 		}
 		:only-child {
 			margin-right: -5px;
