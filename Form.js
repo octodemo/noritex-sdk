@@ -275,3 +275,44 @@ export const SelectBox = styled.div`
 	  border-color: #363636;
 	}
 `;
+
+
+
+export const Checkbox = styled.div`
+	position: relative;
+	label {
+		display: block;
+		cursor: pointer;
+		user-select: none;
+	}
+	input {
+		display: none;
+		&:checked + span {
+			background-color: #112c55 !important;
+			border-color: #112c55;
+			box-shadow: inset 0 0 0px 2px white;
+			& + p {
+				color: #333 !important;
+			}
+		}
+	}
+	span {
+		width: 16px;
+		height: 16px;
+		border-radius: 2px;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: solid 2px #C3C2C9;
+	}
+	&:hover p {
+		color: #47494A;
+	}
+	p {
+		padding-left: 20px;
+		font-size: 15px;
+		color: #5D5F60;
+		line-height: initial;
+	}
+`;

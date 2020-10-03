@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const Pagination = styled.div`
   font-size: 1rem;
@@ -241,21 +241,6 @@ export const Tag = styled.span`
   white-space: nowrap;
 `;
 
-export const Tag = styled.span`
-  align-items: center;
-  background-color: whitesmoke;
-  border-radius: 4px;
-  color: #4a4a4a;
-  display: inline-flex;
-  font-size: 1.2rem;
-  height: 2em;
-  justify-content: center;
-  line-height: 1.5;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  white-space: nowrap;
-`;
-
 export const Tabs = styled.div`
 	-webkit-overflow-scrolling:touch;
 	align-items:stretch;
@@ -456,4 +441,100 @@ export const Preloader = styled.div`
 `;
 
 
-  
+const activeMixin = css`
+	display: block;
+`;
+const rightMixin = css`
+	left: auto; 
+	right: 0;
+`;
+const upMixin = css`
+	bottom: 100%;
+	padding-bottom: 4px;
+	padding-top: initial;
+	top: auto;
+`;
+
+export const Dropdown = styled.div`
+	display: inline-flex;
+	position: relative;
+	vertical-align: top;
+	font-size: 16px;
+	&:hover > div {
+		${props => props.isHoverable && activeMixin};
+	}
+	> div {
+		display: none;
+		left: 0;
+		min-width: 12rem;
+		padding-top: 4px;
+		position: absolute;
+		top: 100%;
+		z-index: 20;
+		${props => props.isActive && activeMixin};
+		${props => props.isRight && rightMixin};
+		${props => props.isUp && upMixin};
+
+		> div {
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
+			padding-bottom: .5rem;
+			padding-top: .5rem;
+
+			ul {
+				max-height: 171px;
+				overflow-y: auto;
+			}
+			li {
+				font-size: 14px;
+				padding: .375rem 1rem;
+				padding-right: 3rem;
+				&.divisor {
+					background-color: #ededed;
+					border: none;
+					display: block;
+					height: 1px;
+					margin: .5rem 0;
+					padding: 0;
+				}
+				a {
+					margin: -.375rem -1rem;
+					margin-right: -3rem;
+				}
+			}
+			a {
+				font-size: 14px;
+				color: #4a4a4a;
+				display: block;
+				line-height: 1.5;
+				padding: .375rem 1rem;
+				padding-right: 3rem;
+				text-align: inherit;
+				white-space: nowrap;
+				position: relative;
+				:hover {
+					background-color: #f5f5f5;
+					color: #0a0a0a;
+				}
+				&.is-active {
+					background-color: #112c55;
+					color: #fff;
+				}
+				&.is-checked {
+					&:after {
+						content: '';
+						width: 12px;
+						height: 6px;
+						border-left: solid 2px #112c55;
+						border-bottom: solid 2px #112c55;
+						position: absolute;
+						right: 5px;
+						top: 10px;
+						transform: rotate(-45deg);
+					}
+				}
+			}
+		}
+	}
+`;

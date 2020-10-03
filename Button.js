@@ -184,3 +184,22 @@ export const Buttons = styled.div`
   }
 `;
 
+export const Icon = styled.span`
+	display: inline-block;
+	vertical-align: middle;
+	&:not(:only-child):first-child {
+		margin-right: 5px;
+	}
+	&:not(:only-child):last-child {
+		margin-left: 5px;
+	}
+	+ & {
+		margin-left: 10px;
+	}
+	svg {
+		color: #4a4a4a;
+		width: 18px;
+		height: 18px;
+		object-fit: contain;
+	}
+`;
