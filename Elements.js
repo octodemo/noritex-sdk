@@ -538,3 +538,70 @@ export const Dropdown = styled.div`
 		}
 	}
 `;
+
+export const Breadcrumb = styled.nav`
+	font-size: 12px;
+	white-space: nowrap;
+	user-select: none;
+	ul {
+		align-items: flex-start;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+    align-items: center;
+    display: flex;
+	}
+	li + li:before {
+    color: #b5b5b5;
+    content: ">";
+	}
+  a {
+    align-items: center;
+    color: #3273dc;
+    display: flex;
+    justify-content: center;
+    padding: 0 .75em;
+    padding-left: 0.75em;
+	}
+	li:first-child a {
+    padding-left: 0;
+	}
+	li.is-active a {
+    color: #363636;
+    cursor: default;
+    pointer-events: none;
+	}
+`;
+
+export const ArrowLeft = styled.div`
+	&:before {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: solid 0 #464646;
+		border-left-width: 1px;
+		border-bottom-width: 1px;
+		transform: rotate(45deg);
+		transform-origin: center;
+		content: '';
+	}
+`;
+
+export const ArrowRight = styled.div`
+	&:before {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: solid 0 #464646;
+		border-right-width: 1px;
+		border-top-width: 1px;
+		transform: rotate(45deg);
+		transform-origin: center;
+		content: '';
+	}
+`;
