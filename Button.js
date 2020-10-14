@@ -187,6 +187,11 @@ export const Buttons = styled.div`
 export const Icon = styled.span`
 	display: inline-block;
 	vertical-align: middle;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
 	&:not(:only-child):first-child {
 		margin-right: 5px;
 	}

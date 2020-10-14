@@ -605,3 +605,86 @@ export const ArrowRight = styled.div`
 		content: '';
 	}
 `;
+
+
+export const Menu = styled.div`
+	font-size: 16px;
+	label {
+		color: #7a7a7a;
+		font-size: .75em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		display: block;
+
+		&:not(:last-child) {
+		  margin-bottom: 1em;
+		}
+		&:not(:first-child) {
+		  margin-top: 1em;
+		}
+	}
+	ul {
+		line-height: 1.25;
+		li {
+			list-style: none;
+			a {
+				border-radius: 2px;
+				color: #4a4a4a;
+				display: block;
+				padding: .5em .75em;
+				display: flex;
+				align-items: center;
+				:hover {
+					background-color: #f5f5f5;
+					color: #363636;
+				}
+				&.is-active {
+					background-color: #132448;
+					color: #fff;
+				}
+				p {
+					padding: 0;
+					margin: 0;
+				}
+				figure {
+					margin-right: 10px;
+					width: 32px;
+					height: 32px;
+					overflow: hidden;
+					border-radius: 100%;
+					img, svg {
+						width: 100%;
+						height: 100%;
+						display: block;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+`;
+
+
+export const Profile = styled.div`
+	display: flex;
+	align-items: center;
+	figure {
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		border-radius: 100%;
+		background-color: #fff;
+		padding: 10px;
+		margin-right: 10px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	h1, h2, h3, h4, h5 {	
+		color: #464646;
+		margin: 0;
+		padding: 0;
+	}
+`;

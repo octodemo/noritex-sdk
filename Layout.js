@@ -227,6 +227,35 @@ export const Heading = styled.div`
   }
 `;
 
+const BlankState = styled.div`
+  > div {
+    border: dashed 1px #e3e3e3;
+    padding: 10%;
+    border-radius: 3px;
+  }
+  text-align: center;
+  svg {
+    color: #eee;
+    width: 60px;
+  }
+  h3 {
+    padding: 20px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  p {
+    color: #7b7b7b;
+    font-size: 14px;
+  }
+  a {
+    color: royalblue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
 export const LevelLeft = styled.div`
   flex-basis: auto;
   flex-grow: 0;
