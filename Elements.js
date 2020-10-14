@@ -365,6 +365,12 @@ export const Modal = styled.div`
             transform: translateX(-50%) translateY(-50%) rotate(45deg);
             transform-origin: center center;
         }
+        @media (max-width: 768px) {
+            :after,
+            :before {
+                background-color: black !important;
+            }
+        }
         :before {
             height: 2px;
             width: 50%;
