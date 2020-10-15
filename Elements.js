@@ -334,6 +334,7 @@ export const Modal = styled.div`
         max-width: 640px;
     }
     > button {
+        z-index: 44;
         height: 32px;
         max-height: 32px;
         max-width: 32px;
@@ -353,10 +354,11 @@ export const Modal = styled.div`
         font-size: 0;
         outline: 0;
         user-select: none;
+        background-color: #fff;
         margin: 0;
         :after,
         :before {
-            background-color: #fff;
+            background-color: black;
             content: "";
             display: block;
             left: 50%;
