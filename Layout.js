@@ -96,6 +96,7 @@ export const Title = styled.h1`
     font-weight: 600;
     line-height: 1.125;
     margin-bottom: 20px;
+    margin-top: 0px;
     word-break: break-word;
     span {
         font-weight: inherit;
