@@ -174,12 +174,21 @@ export const Button = styled.button`
 
 export const Buttons = styled.div`
 	display: flex;
-	${props => props.isCentered ? 'justify-content: center;' : ''}
-  ${Button} {
+	justify-content: ${props => {
+		if(props.isCentered) {
+			return 'center;';
+		} else if (props.isRight) {
+			return 'flex-end;'
+		} else {
+			return 'flex-start;'
+		}
+	}}
+  
+ 	${Button}:not(:only-child) {
     margin-bottom: 10px;
   }
   
-  ${Button} + ${Button} {
+  & ${Button} + ${Button} {
     margin-left: 10px;
   }
 `;

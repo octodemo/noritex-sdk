@@ -12,35 +12,35 @@ export const Box = styled.div`
     padding: 2rem;
 `;
 
-export const Container = styled.div`
-    flex-grow: 1;
-    margin: 0 auto;
-    position: relative;
-    width: auto;
+export const Container = styled.div`  
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
 
-    @media screen and (min-width: 1024px) {
-        max-width: 960px;
-    }
+  @media screen and (min-width: 1024px) {
+    max-width: 960px;
+  }
 
-    @media screen and (min-width: 1216px) {
-        max-width: 1152px;
-    }
+  @media screen and (min-width: 1216px) {
+    max-width: 1152px;
+  }
 
-    @media screen and (min-width: 1408px) {
-        max-width: 1344px;
-    }
+  @media screen and (min-width: 1408px) {
+    max-width: 1344px;
+  }
 
-    ${(props) =>
-        props.isFluid
-            ? "max-width: inherit !important; padding: 0px 10px !important;"
-            : ""}
+  ${(props) =>
+    props.isFluid
+      ? "max-width: inherit !important; padding: 0px 10px !important;"
+      : ""}
 `;
 
-export const Section = styled.div`
-    padding: 3.6rem 10px;
-    @media (max-width: 768px) {
-        padding: 18px 5px;
-    }
+export const Section = styled.div`  
+  padding: 3.6rem 10px;
+  @media (max-width: 768px) {
+    padding: 18px 5px;
+  }
 `;
 
 export const Row = styled.div`
@@ -235,33 +235,33 @@ export const Heading = styled.div`
     }
 `;
 
-const BlankState = styled.div`
-    > div {
-        border: dashed 1px #e3e3e3;
-        padding: 10%;
-        border-radius: 3px;
+export const BlankState = styled.div`
+  > div {
+    border: dashed 1px #e3e3e3;
+    padding: 10%;
+    border-radius: 3px;
+  }
+  text-align: center;
+  svg {
+    color: #eee;
+    width: 60px;
+  }
+  h3 {
+    padding: 20px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  p {
+    color: #7b7b7b;
+    font-size: 14px;
+  }
+  a {
+    color: royalblue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
-    text-align: center;
-    svg {
-        color: #eee;
-        width: 60px;
-    }
-    h3 {
-        padding: 20px 0 10px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    p {
-        color: #7b7b7b;
-        font-size: 14px;
-    }
-    a {
-        color: royalblue;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 `;
 
 export const LevelLeft = styled.div`
@@ -369,31 +369,35 @@ export const Level = styled.div`
     }
 `;
 
-export const BlankState = styled.div`
-    > div {
-        border: dashed 1px #e3e3e3;
-        padding: 10%;
-        border-radius: 3px;
+export const SimpleCard = styled.a`
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 99%;
+  margin: 0.5%;
+  figure {
+    position: relative;
+    padding-top: 65%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
+  }
+  h3 {
+    display: block;
     text-align: center;
-    svg {
-        color: #eee;
-        width: 60px;
-    }
-    h3 {
-        padding: 20px 0 10px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    p {
-        color: #7b7b7b;
-        font-size: 14px;
-    }
-    a {
-        color: royalblue;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #464646;
+  }
+  &:hover h3 {
+    color: #112c55;
+  }
 `;
+
