@@ -300,6 +300,42 @@ export const Tabs = styled.div`
 		justify-content:flex-end;
 		padding-left:.75em;
 	}
+
+	&.is-toggle {
+		a {
+			border-color: #dbdbdb;
+			border-style: solid;
+			border-width: 1px;
+			margin-bottom: 0;
+			position: relative;
+			&:hover {
+				background-color: #f5f5f5;
+				border-color: #b5b5b5;
+			}
+		}
+		li.is-active a {
+	    background-color: #112c55;
+	    border-color: #112c55;
+	    color: #fff;
+	    z-index: 1;
+	  }
+    ul {
+    	border-bottom: none;
+    }
+	}
+	&.is-toggle {
+		li:last-child {
+			margin-left: -1px;
+		  a {
+		    border-top-right-radius: 4px;
+		    border-bottom-right-radius: 4px;
+			}
+		}
+		li:first-child a {
+	    border-top-left-radius: 4px;
+	    border-bottom-left-radius: 4px;
+		}
+	}
 `;
 
 export const Modal = styled.div`
@@ -606,7 +642,6 @@ export const ArrowRight = styled.div`
 	}
 `;
 
-
 export const Menu = styled.div`
 	font-size: 16px;
 	label {
@@ -663,7 +698,6 @@ export const Menu = styled.div`
 		}
 	}
 `;
-
 
 export const Profile = styled.div`
 	display: flex;
