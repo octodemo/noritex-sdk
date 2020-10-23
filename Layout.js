@@ -12,7 +12,7 @@ export const Box = styled.div`
     padding: 2rem;
 `;
 
-export const Container = styled.div`  
+export const Container = styled.div`
   flex-grow: 1;
   margin: 0 auto;
   position: relative;
@@ -36,7 +36,7 @@ export const Container = styled.div`
       : ""}
 `;
 
-export const Section = styled.div`  
+export const Section = styled.div`
   padding: 3.6rem 10px;
   @media (max-width: 768px) {
     padding: 18px 5px;
@@ -56,6 +56,12 @@ export const Row = styled.div`
     }
 `;
 
+const isFull980Mixin = css`
+  @media (max-width: 980px) {
+    width: 100%
+  }
+`;
+
 export const Column = styled.div`
     display: block;
     flex-basis: 0;
@@ -63,6 +69,7 @@ export const Column = styled.div`
     flex-shrink: 1;
     padding: 1.2rem;
     flex: ${(props) => (props.isNarrow ? "none" : "")};
+    ${props => props.isFull980 && isFull980Mixin}
 `;
 
 export const Columns = styled.div`
@@ -399,4 +406,3 @@ export const SimpleCard = styled.a`
     color: #112c55;
   }
 `;
-

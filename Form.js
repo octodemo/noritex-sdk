@@ -49,19 +49,19 @@ export const Control = styled.div`
     }
 
     input::-moz-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     input::-webkit-input-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     input:-moz-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     input:-ms-input-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     input:hover {
@@ -225,19 +225,19 @@ export const SelectBox = styled.div`
     }
 
     select::-moz-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     select::-webkit-input-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     select:-moz-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     select:-ms-input-placeholder {
-        color: rgba(54, 54, 54, 0.3);
+        color: #6F7279;
     }
 
     select:hover {

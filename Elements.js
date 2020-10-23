@@ -524,6 +524,7 @@ export const Dropdown = styled.div`
                 font-size: 14px;
                 padding: 0.375rem 1rem;
                 padding-right: 3rem;
+                white-space: nowrap;
                 &.divisor {
                     background-color: #ededed;
                     border: none;
@@ -531,6 +532,7 @@ export const Dropdown = styled.div`
                     height: 1px;
                     margin: 0.5rem 0;
                     padding: 0;
+                    width: 100%;
                 }
                 a {
                     margin: -0.375rem -1rem;
@@ -764,4 +766,20 @@ export const Notify = styled.span`
 
 	${(props) => props.left && "right: inherit; left: 20px;"}
 	${(props) => props.top && "bottom: inherit; top: 20px;"}
+`;
+
+export const Message = styled.div`
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #4a4a4a;
+    padding: 12px 15px;
+    & + & {
+        margin-top: 10px;
+    }
+
+    ${(props) => props.info && infoMixin}
+    ${(props) => props.success && successMixin}
+    ${(props) => props.alert && alertMixin}
+    ${(props) => props.error && errorMixin}
 `;
