@@ -49,19 +49,19 @@ export const Control = styled.div`
     }
 
     input::-moz-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     input::-webkit-input-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     input:-moz-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     input:-ms-input-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     input:hover {
@@ -140,6 +140,8 @@ export const Field = styled.div`
 `;
 
 export const FieldBody = styled.div`
+    ${(props) =>
+        props.isFlexEnd ? "display: flex;align-items: flex-end;" : ""};
     ${Field} ${Field} {
         margin-bottom: 0;
     }
@@ -225,19 +227,19 @@ export const SelectBox = styled.div`
     }
 
     select::-moz-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     select::-webkit-input-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     select:-moz-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     select:-ms-input-placeholder {
-        color: #6F7279;
+        color: #6f7279;
     }
 
     select:hover {
