@@ -37,7 +37,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`
-    padding: ${(props) => (props.noPadding ? "0" : "3.6rem 10px")};
+    padding: ${(props) => (props.noPadding ? "3.6rem 0" : "3.6rem 10px")};
     @media (max-width: 768px) {
         padding: 18px 5px;
     }
