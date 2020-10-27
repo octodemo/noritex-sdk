@@ -620,10 +620,15 @@ export const Breadcrumb = styled.nav`
     li:first-child a {
         padding-left: 0;
     }
-    li.is-active a {
-        color: #363636;
-        cursor: default;
-        pointer-events: none;
+    li.is-active {
+        @media (max-width: 386px) {
+            display: none;
+        }
+        a {
+            color: #363636;
+            cursor: default;
+            pointer-events: none;
+        }
     }
 `;
 
