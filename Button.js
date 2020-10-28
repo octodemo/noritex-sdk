@@ -13,7 +13,7 @@ export const Button = styled.button`
   height: 2.5em;
   line-height: 1.5;
   position: relative;
-	display: inline-block;
+	display: flex;
 	vertical-align: top;
 	border: solid 1px #dbdbdb;
 	font-size: 16px;
@@ -73,6 +73,7 @@ export const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   justify-content: center;
+  align-items: center;
   padding-bottom: calc(0.5em - 1px);
   padding-left: 1em;
   padding-right: 1em;
@@ -105,18 +106,13 @@ export const Button = styled.button`
   	}
   }};
 
-
-
 	@media (max-width: 768px) {
-		${props => props.responsive ? 'width: 100%;' : ''}
+		${props => props.responsive && 'width: 100%;' : ''}
 	}
 
 	svg {
 		width: 16px;
 		height: 16px;
-		display: inline-block;
-		vertical-align: middle;
-		margin-top: -5px;
 		&:not(:only-child):first-child {
 			margin-right: 5px;
 			margin-left: -5px;
