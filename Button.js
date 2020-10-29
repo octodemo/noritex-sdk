@@ -187,6 +187,14 @@ export const Buttons = styled.div`
   & ${Button} + ${Button} {
     margin-left: 10px;
   }
+
+  ${(props) =>
+        props.hasLink
+            ? `
+                & ${Button} + a {
+                    margin-left: 10px;
+                }`
+            : ""}
 `;
 
 export const Icon = styled.span`
