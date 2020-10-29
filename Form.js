@@ -86,6 +86,29 @@ export const Control = styled.div`
         max-width: 100%;
         width: 100%;
     }
+    textarea {
+        display: block;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 2px 5px;
+        resize: vertical;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-color: #dbdbdb;
+        border-radius: 4px;
+        color: #363636;
+        box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+        width: 100%;
+        moz-appearance: none;
+        -webkit-appearance: none;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        &:not([rows]) {
+            min-height: 130px;
+            max-height: 640px;
+        }
+    }
 `;
 
 export const Field = styled.div`
