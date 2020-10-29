@@ -32,6 +32,10 @@ export const Control = styled.div`
         vertical-align: top;
     }
 
+    .is-invalid {
+        border-color: red;
+    }
+
     input:focus,
     input:active {
         outline: none;
