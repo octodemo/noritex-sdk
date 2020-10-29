@@ -406,3 +406,119 @@ export const SimpleCard = styled.a`
     color: #112c55;
   }
 `;
+
+export const PageContent = styled.div`
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  font-size: 16px;
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #4d4d4d;
+    font-weight: 600;
+    line-height: 1.125;
+    &:not(:first-child) {
+     margin-top: 25px;
+    }
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+  h4 {
+   font-size: 1.25em;
+   margin-bottom: 8px;
+  }
+  h5 {
+    font-size: 1.125em;
+    margin-bottom: 6px;
+  }
+  h6 {
+   font-size: 1em;
+   margin-bottom: 6px;
+  }
+  p {
+    color: #4d4d4d;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    a {
+      color: royalblue;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  p + p {
+    margin-top: 10px;
+  }
+
+  ul, ol {
+   list-style-position: outside;
+   margin: 20px;
+  }
+  li {
+    font-size: 1em;
+  }
+  li + li {
+   margin-top: 5px;
+  }
+  ul li {
+    list-style: initial;
+  }
+  ol li {
+    list-style-type: number;
+  }
+  ul ul li {
+   list-style-type: circle;
+   margin-top: 10px;
+  }
+  ul ul ul li {
+   list-style-type: square;
+  }
+
+  figure {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    &:not(:first-child) {
+     margin-top: 30px;
+    }
+    &:not(:last-child) {
+     margin-bottom: 30px;
+    }
+  }
+  figure img {
+   display: inline-block;
+   max-width: 100%;
+  }
+  figure figcaption {
+   font-style: italic;
+   font-size: 12px;
+   color: #808080;
+  }
+  sub, sup {
+   font-size: 75%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    h1, h2, h3, h4, h5, h6 {
+      &:not(:first-child) {
+       margin-top: 15px;
+      }
+    }
+  }
+`;
