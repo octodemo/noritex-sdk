@@ -168,78 +168,76 @@ export const Subtitle = styled(Title)`
 `;
 
 export const Heading = styled.div`
-    padding-bottom: 20px;
-    h2 {
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        font-size: 22px;
-        color: #484848;
-        position: relative;
-        padding-left: 15px;
-        :before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-color: #112c55;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -5px;
-        }
+  padding-bottom: 20px;
+  h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #484848;
+    position: relative;
+    padding-left: 15px;
+    :before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #112c55;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -5px;
     }
-    h3 {
-        font-size: 22px;
-        color: #484848;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        :before {
-            content: "";
-            width: 50px;
-            height: 1px;
-            background-color: #112c55;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+  }
+  h1, h3 {
+    font-size: 22px;
+    color: #484848;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    :before {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #112c55;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
-    p {
-        font-size: 15px;
-        line-height: 22px;
-    }
-    h2,
-    h3,
-    p {
-        width: 90%;
-        max-width: 600px;
-    }
+  }
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  h1, h2, h3, p {
+    width: 90%;
+    max-width: 600px;
+  }
 
-    ${(props) => {
-        if (props.isCentered) {
-            return `
+  ${props => {
+    if (props.isCentered) {
+      return `
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-
+        h1:before,
         h3:before {
           left: 50%;
           margin-left: -25px;
         }
       `;
-        }
-    }}
-
-    @media (max-width: 768px) {
-        font-size: 16px;
-        p {
-            font-size: 13px;
-            line-height: 18px;
-        }
-        h3 {
-            font-size: 16px;
-        }
     }
+  }}
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    p {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const BlankState = styled.div`
