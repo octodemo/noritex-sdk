@@ -145,7 +145,7 @@ export const Field = styled.div`
     }};
 
     &:not(:last-child) {
-        margin-bottom: 0.75rem;
+        margin-bottom: 15px;
     }
     @media screen and (min-width: 769px), print {
         display: ${(props) => (props.isHorizontal ? "flex" : "")};
