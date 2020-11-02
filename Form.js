@@ -337,10 +337,63 @@ export const Checkbox = styled.div`
     &:hover p {
         color: #47494a;
     }
-    p {
+    p { 
+        margin: 0;
+        padding: 0;
         padding-left: 20px;
         font-size: 15px;
         color: #5d5f60;
         line-height: initial;
+    }
+`;
+
+export const Radio = styled.div`
+    position: relative;
+    display: inline-block;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px 15px;
+        height: 40px;
+        border: solid 1px #dbdbdb;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+    }
+    input {
+        display: none;
+        &:checked + span {
+            background-color: ${(props) =>
+                props.isLoading ? "#fff" : "#112c55"} !important;
+            border-color: #112c55;
+            box-shadow: inset 0 0 0px 2px white;
+            & + p {
+                color: #333 !important;
+            }
+        }
+    }
+    span {
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        display: inline-block;
+        border: solid 2px #c3c2c9;
+    }
+    &:hover p {
+        color: #47494a;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+        font-size: 15px;
+        color: #5d5f60;
+        line-height: initial;
+        font-weight: normal;
     }
 `;
