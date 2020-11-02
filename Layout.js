@@ -85,6 +85,8 @@ export const Columns = styled.div`
         margin-bottom: calc(1.5rem - 1.2rem);
     }
 
+    ${props => props.isMultiline && 'flex-wrap: wrap;'}
+
     @media screen and (min-width: 769px), print {
         display: ${(props) => (props.isDesktop ? "block" : "flex")};
     }
