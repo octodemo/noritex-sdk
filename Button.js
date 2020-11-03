@@ -107,7 +107,7 @@ export const Button = styled.button`
   }};
 
 	@media (max-width: 768px) {
-		${props => props.responsive && 'width: 100%;' : ''}
+		${props => props.responsive && 'width: 100%;'}
 	}
 
 	svg {
