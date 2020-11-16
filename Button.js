@@ -39,7 +39,6 @@ export const Button = styled.button`
 
   :active, &.is-active {
     border-color: #4a4a4a;
-    color: #363636;
     z-index: 2;
 	}
 	${props => {
