@@ -350,7 +350,6 @@ export const Modal = styled.div`
     width: 100%;
     height: 100%;
     z-index: 40;
-    background-color: rgba(10, 10, 10, 0.86);
     &.is-active {
         display: flex;
     }
@@ -368,6 +367,7 @@ export const Modal = styled.div`
         max-height: calc(100vh - 40px);
         width: 98%;
         max-width: 640px;
+        z-index: 2;
     }
     > button {
         z-index: 44;
@@ -417,6 +417,14 @@ export const Modal = styled.div`
             height: 50%;
             width: 2px;
         }
+    }
+    > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.86);
     }
 `;
 
