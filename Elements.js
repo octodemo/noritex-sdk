@@ -379,6 +379,7 @@ export const Modal = styled.div`
         width: 32px;
         background: none;
         position: fixed;
+        z-index: 2;
         right: 20px;
         top: 20px;
         -webkit-appearance: none;
