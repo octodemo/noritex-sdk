@@ -747,8 +747,8 @@ export const Profile = styled.div`
 `;
 
 const infoMixin = css`
-    background-color: #eef6fc;
-    color: #1d72aa;
+    background-color: black;
+    color: #fff;
 `;
 const successMixin = css`
     background-color: #effaf3;
@@ -776,6 +776,16 @@ export const Notify = styled.span`
     right: 20px;
     bottom: 20px;
     box-shadow: 0 3px 4px -4px rgba(0, 0, 0, 0.5);
+
+    span {
+        margin-right: 5px;
+        svg {
+            fill: #fff;
+
+            width: 12px;
+            height: 11px;
+        }
+    }
 
     ${(props) => props.info && infoMixin}
     ${(props) => props.success && successMixin}
