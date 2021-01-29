@@ -122,29 +122,39 @@ export const Field = styled.div`
 
     ${(props) => {
         if (props.hasAddons) {
-            return `	
-		    display: flex;
-		    justify-content: flex-start;
-				
-				${Control}:not(:last-child) {
-			    margin-right: -1px;
-				}
-				${Control}:first-child:not(:only-child) a,
-				${Control}:first-child:not(:only-child) button, 
-				${Control}:first-child:not(:only-child) input, 
-				${Control}:first-child:not(:only-child) select {
-			    border-bottom-right-radius: 0;
-			    border-top-right-radius: 0;
-				}
-
-				${Control}:last-child:not(:only-child) a,
-				${Control}:last-child:not(:only-child) button, 
-				${Control}:last-child:not(:only-child) input, 
-				${Control}:last-child:not(:only-child) select {
-			    border-bottom-left-radius: 0;
-			    border-top-left-radius: 0;
-				}
-			`;
+            return `    
+            display: flex;
+            justify-content: flex-start;
+                ${Control} {
+                    a,
+                    button, 
+                    input, 
+                    select {
+                        border-radius: 0;
+                    }
+                    &:not(:last-child) {
+                     margin-right: -1px;
+                    }
+                    &:first-child {
+                        a,
+                        button, 
+                        input, 
+                        select {
+                            border-bottom-left-radius: 3px;
+                            border-top-left-radius: 3px;
+                        }
+                    }
+                    &:last-child {
+                        a,
+                        button, 
+                        input, 
+                        select {
+                            border-bottom-right-radius: 3px;
+                            border-top-right-radius: 3px;
+                        }
+                    }
+                }
+            `;
         }
     }};
 
