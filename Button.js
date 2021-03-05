@@ -168,6 +168,7 @@ export const Button = styled.button`
 
 
 export const Buttons = styled.div`
+	width: 100%;
 	display: flex;
 	justify-content: ${props => {
 		if(props.isCentered) {

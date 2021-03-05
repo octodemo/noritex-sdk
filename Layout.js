@@ -107,6 +107,8 @@ export const Title = styled.h1`
     margin-bottom: 20px;
     margin-top: 0px;
     word-break: break-word;
+    ${props => props.isCentered && 'text-align: center;'}
+    ${props => props.primary && 'color: #112c55;'}
     span {
         font-weight: inherit;
     }
