@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 
 export const Button = styled.button`
@@ -96,7 +97,7 @@ export const Button = styled.button`
   	if (props.small) {
   		return `
 			  border-radius: 2px;
-			  font-size: 1.35rem;
+			  font-size: 13px;
 			  svg {
 			  	width: 18px !important;
 			  	height: 18px !important;

@@ -1,0 +1,52 @@
+---
+name: Modal
+menu: Elements
+---
+import {useState} from 'React'
+import { Playground } from 'docz'
+import { Modal } from './Elements'
+import { Buttons, Button } from './Button'
+import { Box, Title } from './Layout'
+import { TestButton, TestButton2 } from '../Helpers'
+
+<script>
+
+</script>
+# Modal
+Utilice la clase 'is-active' para activar la modal: 
+```sh 
+  <Modal className="is-active">...</Modal>
+```
+<Playground>
+  
+  <Modal>
+    <span></span>
+    <button></button>
+    <div>
+      <Box>
+        <Title as="h2" size="5">Título de modal</Title>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <Buttons isRight>
+          <Button>Cancelar</Button>
+          <Button primary>Confirmar</Button>
+        </Buttons>
+      </Box>
+    </div>
+  </Modal>	
+  
+  <TestButton /> 
+</Playground>
+
+### Modal con imagen
+<Playground>
+  
+  <Modal>
+    <span></span>
+    <button></button>
+    <div>
+      <img src="https://www.noritex.com/QZe57qNbxMYtNrWxM1_0010_Allure1.jpg" />
+    </div>
+  </Modal>	
+  
+  <TestButton2 /> 
+</Playground>

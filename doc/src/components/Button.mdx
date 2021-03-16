@@ -1,0 +1,80 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground } from 'docz'
+import { Button, Buttons } from './Button'
+import Icons from './Icons'
+
+# Botones
+
+## Uso básico
+
+<Playground>
+  <Button>Button</Button>
+</Playground>
+
+## Variantes
+Usar elemento padre **Buttons** para agregar separación en un grupo de botones
+
+<Playground>
+	<Buttons>
+	  <Button>Default</Button>
+	  <Button primary>Primary</Button>
+	  <Button white>White</Button>
+	  <Button static>Static</Button>
+	  <Button loading>Button</Button>
+	</Buttons>
+</Playground>
+
+## Tamaño
+
+<Playground>
+	<Buttons>
+	  <Button>Normal</Button>
+	  <Button small>Small</Button>
+	</Buttons>
+</Playground>
+
+## Alineación
+
+<Playground>
+	<Buttons isCentered>
+	  <Button>Button 1</Button>
+	  <Button>Button 2</Button>
+	  <Button>Button 3</Button>
+	</Buttons>
+</Playground>
+
+<Playground>
+	<Buttons isRight>
+	  <Button>Button 1</Button>
+	  <Button>Button 2</Button>
+	  <Button>Button 3</Button>
+	</Buttons>
+</Playground>
+
+## Full Width
+
+<Playground>
+	<Button isFullWidth>Full Width Button</Button>
+</Playground>
+
+## Responsive
+En resoluciones igual o menor a 768px de ancho, el botón se expande al 100%.
+
+<Playground>
+	<Button responsive>Button</Button>
+</Playground>
+
+## Con icono
+
+
+<Playground>
+	<Buttons>
+		<Button><Icons icon="search"></Icons><span>Button</span></Button>
+		<Button><span>Button</span><Icons icon="chevron-right"></Icons></Button>
+	</Buttons>
+</Playground>
+

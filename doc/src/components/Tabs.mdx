@@ -1,0 +1,43 @@
+---
+name: Tabs
+menu: Elements
+---
+
+import { Playground } from 'docz'
+import { Tabs } from './Elements'
+
+# Tabs
+
+<Playground>
+  <Tabs>
+    <ul>
+      <li className="is-active"><a href="">Tab 1</a></li>
+      <li><a href="">Tab 2</a></li>
+      <li><a href="">Tab 3</a></li>
+    </ul>
+  </Tabs>	
+</Playground>
+
+### Alineación
+Para alinear el listado de tabs, utilice los modificadores **```is-centered is-right```**
+<Playground>
+  <Tabs>
+    <ul className="is-center">
+      <li className="is-active"><a href="">Tab 1</a></li>
+      <li><a href="">Tab 2</a></li>
+      <li><a href="">Tab 3</a></li>
+    </ul>
+  </Tabs>	
+</Playground>
+
+### Estilo
+Utilice el modificador **```is-toggle```** para un estilo outline
+<Playground>
+  <Tabs className="is-toggle">
+    <ul>
+      <li><a href="">Tab 1</a></li>
+      <li className="is-active"><a href="">Tab 2</a></li>
+      <li><a href="">Tab 3</a></li>
+    </ul>
+  </Tabs>	
+</Playground>
