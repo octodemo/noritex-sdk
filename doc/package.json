@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "docz dev",
     "build": "docz build",
-    "serve": "docz serve"
+    "serve": "docz serve",
+    "deploy": "aws s3 sync ./dist/ s3://ntx-sdk-docs/"
   },
   "dependencies": {
     "docz": "latest",
