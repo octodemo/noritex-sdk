@@ -1,0 +1,19 @@
+{
+  "name": "noritex-sdk",
+  "version": "1.0.2",
+  "description": "Styled Component SDK ",
+  "main": "Elements.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nesbtesh1993@bitbucket.org/noritextech/sdk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/noritextech/sdk#readme"
+}
