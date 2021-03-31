@@ -139,6 +139,8 @@ export const Filters = styled.div`
         color: #112c55;
         display: block;
         margin-bottom: 0;
+        margin: 0;
+        padding: 0;
         cursor: pointer;
         user-select: none;
         padding: 12px 10px;
@@ -161,6 +163,7 @@ export const Filters = styled.div`
     ul {
         background: whitesmoke;
         padding: 20px;
+        margin: 0;
         box-shadow: inset 0 5px 10px -11px;
         &:not(.is-visible) {
             display: none;
@@ -170,6 +173,7 @@ export const Filters = styled.div`
         }
         li {
             position: relative;
+            list-style: none;
             label {
                 display: block;
                 cursor: pointer;
@@ -187,8 +191,8 @@ export const Filters = styled.div`
                 }
             }
             span {
-                width: 16px;
-                height: 16px;
+                width: 15px;
+                height: 15px;
                 border-radius: 2px;
                 display: inline-block;
                 position: absolute;
@@ -200,10 +204,11 @@ export const Filters = styled.div`
                 color: #47494a;
             }
             p {
-                padding-left: 20px;
+                padding-left: 22px;
                 font-size: 15px;
                 color: #5d5f60;
                 line-height: initial;
+                margin: 0;
             }
 
             a {
@@ -553,12 +558,17 @@ export const Dropdown = styled.div`
             ul {
                 max-height: 171px;
                 overflow-y: auto;
+                list-style: none;
+                margin: 0;
+                padding: 0;
             }
             li {
                 font-size: 14px;
                 padding: 0.375rem 1rem;
                 padding-right: 3rem;
                 white-space: nowrap;
+                margin: 0;
+
                 &.divisor {
                     background-color: #ededed;
                     border: none;
@@ -583,6 +593,7 @@ export const Dropdown = styled.div`
                 text-align: inherit;
                 white-space: nowrap;
                 position: relative;
+                text-decoration: none;
                 :hover {
                     background-color: #f5f5f5;
                     color: #0a0a0a;

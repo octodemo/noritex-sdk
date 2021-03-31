@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
 import { Buttons, Button } from './Components/Button'
-import { Modal, Notify } from './components/Elements'
+import { Modal, Notify, Dropdown } from './components/Elements'
 import { Box, Title } from './components/Layout'
 
 export const TestButton = () => {
@@ -73,6 +73,56 @@ export const NotifyDemo = () => {
             <Notify1 success>Notificación success</Notify1>
             <Notify2 alert>Notificación alert</Notify2>
             <Notify4 error>Notificación error</Notify4>
+        </>
+    )
+}
+
+export const DemoDropdown = () => {
+    const [isActive, setIsActive] = useState(false)
+    const toggle = () => {
+        setIsActive(!isActive);
+    }
+    return (
+        <>
+            <Dropdown isActive={isActive}>
+                <Button primary onClick={() => toggle()}>Toggle Dropdown</Button>
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="">Mi cuenta</a></li>
+                            <li><a href="">Mis órdenes</a></li>
+                            <li><a href="">Historial</a></li>
+                            <li className="divisor"></li>
+                            <li><a href="">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </Dropdown>		
+        </>
+    )
+}
+
+export const DemoDropdown2 = () => {
+    const [isActive, setIsActive] = useState(false)
+    const toggle = () => {
+        setIsActive(!isActive);
+    }
+    return (
+        <>
+            <Dropdown isHoverable>
+                <Button primary onClick={() => toggle()}>Hover Dropdown</Button>
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="">Mi cuenta</a></li>
+                            <li><a href="">Mis órdenes</a></li>
+                            <li><a href="">Historial</a></li>
+                            <li className="divisor"></li>
+                            <li><a href="">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </Dropdown>		
         </>
     )
 }
