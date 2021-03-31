@@ -1,8 +1,3 @@
----
-name: Getting Started
-route: /
----
-
 # Getting Started
 
 Noritex Styled Components SDK allows users to style your website using the necesary CSS only withouth having to import a big library.
