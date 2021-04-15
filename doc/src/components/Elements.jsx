@@ -456,6 +456,41 @@ export const Preloader = styled.div`
     min-height: 20px;
     display: block;
     background-color: rgba(0, 0, 0, 0.11);
+    @keyframes pulse {
+          0% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0.4;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+  
+      @-webkit-keyframes pulse {
+          0% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0.4;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+  
+      @-moz-keyframes pulse {
+          0% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0.4;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
     animation: pulse 1.5s ease-in-out 0.5s infinite;
     & + & {
         margin-top: 10px;
@@ -463,8 +498,12 @@ export const Preloader = styled.div`
     ${(props) => {
         if (props.square) {
             return `
+            &:before {
+                content: '';
+                display: block;
+                padding-top: 80%;
+            }
   			border-radius: 6px;
-  			padding-top: 80%;
   		`;
         }
     }}
@@ -476,41 +515,6 @@ export const Preloader = styled.div`
         }
     }}
 
-  @keyframes pulse {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.4;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes pulse {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.4;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-moz-keyframes pulse {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.4;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 `;
 
 const activeMixin = css`
@@ -715,8 +719,12 @@ export const Menu = styled.div`
     }
     ul {
         line-height: 1.25;
+        padding: 0;
+        margin: 0;
         li {
             list-style: none;
+            padding: 0;
+            margin: 0;
             a {
                 border-radius: 2px;
                 color: #4a4a4a;
@@ -724,6 +732,7 @@ export const Menu = styled.div`
                 padding: 0.5em 0.75em;
                 display: flex;
                 align-items: center;
+                text-decoration: none;
                 :hover {
                     background-color: #f5f5f5;
                     color: #363636;
@@ -764,12 +773,12 @@ export const Profile = styled.div`
         overflow: hidden;
         border-radius: 100%;
         background-color: #fff;
-        padding: 10px;
+        margin: 0;
         margin-right: 10px;
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
     h1,

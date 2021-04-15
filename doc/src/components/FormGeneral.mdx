@@ -1,0 +1,50 @@
+---
+name: General
+menu: Form
+---
+
+import { Playground } from 'docz'
+import { Field, Control, FieldBody, SelectBox, Checkbox, Radio } from './Form'
+
+# General
+Ejemplo completo de formulario
+
+<Playground>
+  <Field isHorizontal>
+    <FieldBody>
+      <Field>
+        <label>Nombre y apellido</label>
+        <Control isExpanded>
+          <input type="text" placeholder="Ingrese nombre y apellido" />
+        </Control>
+      </Field>
+      <Field>
+        <label>Ingrese su correo electrónico</label>
+        <Control isExpanded>
+          <input type="email" placeholder="Ingrese correo electrónico" />
+        </Control>
+      </Field>
+      <Field>
+        <label>Teléfono</label>
+        <Control isExpanded>
+          <input type="number" placeholder="Ingrese su número telefónico" />
+        </Control>
+      </Field>
+    </FieldBody>
+  </Field> 
+  <Field>
+    <SelectBox isFullWidth>
+      <select>
+        <option value="" disabled selected>Asunto</option>
+        <option value="">Contacto</option>
+        <option value="">Soporte</option>
+        <option value="">Ventas</option>
+      </select>
+    </SelectBox>
+  </Field>
+  <Field>
+    <Control isExpanded>
+      <textarea rows="3" placeholder="Su mensaje"></textarea>
+    </Control>
+  </Field>
+</Playground>

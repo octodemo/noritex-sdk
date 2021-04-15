@@ -20,16 +20,14 @@ export const Control = styled.div`
         border-radius: 4px;
         box-shadow: none;
         display: inline-flex;
-        font-size: 1.6rem;
-        height: 2.5em;
+        font-size: 16px;
+        height: 40px;
         justify-content: flex-start;
         line-height: 1.5;
-        padding-bottom: calc(0.5em - 1px);
-        padding-left: calc(0.75em - 1px);
-        padding-right: calc(0.75em - 1px);
-        padding-top: calc(0.5em - 1px);
+        padding: 5px 8px;
         position: relative;
         vertical-align: top;
+        box-sizing: border-box;
     }
 
     .is-invalid {
@@ -103,11 +101,12 @@ export const Control = styled.div`
         color: #363636;
         box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
         width: 100%;
-        moz-appearance: none;
+        -moz-appearance: none;
         -webkit-appearance: none;
         font-size: 16px;
         line-height: 1.5;
         font-family: sans-serif;
+        box-sizing: border-box;
         &:not([rows]) {
             min-height: 130px;
             max-height: 640px;
@@ -158,7 +157,7 @@ export const Field = styled.div`
     label {
         color: #363636;
         display: block;
-        font-size: 1.2rem;
+        font-size: 14px;
         font-weight: 700;
     }
     label:not(:last-child) {
@@ -209,9 +208,9 @@ export const SelectBox = styled.div`
         border-top: 0;
         content: " ";
         display: block;
-        width: 0.425em;
-        height: 0.425em;
-        margin-top: -0.3375em;
+        width: 8px;
+        height: 8px;
+        margin-top: -7px;
         pointer-events: none;
         position: absolute;
         top: 50%;
@@ -227,14 +226,10 @@ export const SelectBox = styled.div`
         border-radius: 4px;
         box-shadow: none;
         display: inline-flex;
-        font-size: 1.6rem;
-        height: 2.5em;
+        height: 40px;
         justify-content: flex-start;
         line-height: 1.5;
-        padding-bottom: calc(0.5em - 1px);
-        padding-left: calc(0.75em - 1px);
-        padding-right: calc(0.75em - 1px);
-        padding-top: calc(0.5em - 1px);
+        padding: 5px 8px;
         position: relative;
         vertical-align: top;
         background-color: white;
@@ -243,9 +238,10 @@ export const SelectBox = styled.div`
         color: #363636;
         cursor: pointer;
         display: block;
-        font-size: 1em;
+        font-size: 16px;
         max-width: 100%;
         outline: none;
+        box-sizing: border-box;
     }
 
     select:focus,
@@ -280,12 +276,12 @@ export const SelectBox = styled.div`
     }
 
     :not(.is-multiple) {
-        height: 2.5em;
+        height: 40px;
     }
 
     :not(.is-multiple):not(.is-loading)::after {
         border-color: #112c55;
-        right: 1.125em;
+        right: 14px;
         z-index: 4;
     }
 
@@ -301,7 +297,7 @@ export const SelectBox = styled.div`
     }
 
     select:not([multiple]) {
-        padding-right: 2.5em;
+        padding-right: 35px;
     }
 
     :not(.is-multiple):not(.is-loading):hover::after {
