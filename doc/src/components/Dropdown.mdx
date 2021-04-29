@@ -1,0 +1,54 @@
+---
+name: Dropdown
+menu: Elements
+---
+
+import { Playground } from 'docz'
+import { Dropdown } from './Elements'
+import Icons from './Icons'
+import { DemoDropdown, DemoDropdown2 } from '../Helpers'
+
+# Dropdown
+Combine las propiedades **```isRight```** ó **```isUp```** para cambiar la posición
+```sh
+    <Dropdown isRigh> ...
+```
+
+<Playground>
+  <Dropdown>
+    <div>
+      <div>
+        <ul>
+          <li><a href="">Mi cuenta</a></li>
+          <li><a href="">Mis órdenes</a></li>
+          <li><a href="">Historial</a></li>
+          <li className="divisor"></li>
+          <li><a href="">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </Dropdown>	
+
+  <DemoDropdown />
+</Playground>
+
+### isHoverable
+Utilice **```isHoverable```** para activar el Dropdown al hacer hover
+
+<Playground>
+  <Dropdown isHoveralbe>
+    <div>
+      <div>
+        <ul>
+          <li><a href="">Mi cuenta</a></li>
+          <li><a href="">Mis órdenes</a></li>
+          <li><a href="">Historial</a></li>
+          <li className="divisor"></li>
+          <li><a href="">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </Dropdown>	
+
+  <DemoDropdown2 />
+</Playground>

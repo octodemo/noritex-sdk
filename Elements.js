@@ -160,6 +160,7 @@ export const Filters = styled.div`
         background: whitesmoke;
         padding: 20px;
         box-shadow: inset 0 5px 10px -11px;
+        list-style: none;
         &:not(.is-visible) {
             display: none;
         }
