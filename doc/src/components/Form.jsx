@@ -308,9 +308,13 @@ export const SelectBox = styled.div`
 export const Checkbox = styled.div`
     position: relative;
     label {
-        display: block;
+        display: flex;
+        align-items: center;
         cursor: pointer;
         user-select: none;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
     }
     input {
         display: none;
@@ -328,19 +332,15 @@ export const Checkbox = styled.div`
         width: 16px;
         height: 16px;
         border-radius: 2px;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 0;
         border: solid 2px #c3c2c9;
     }
     &:hover p {
         color: #47494a;
     }
-    p { 
+    p {
         margin: 0;
         padding: 0;
-        padding-left: 20px;
+        padding-left: 5px;
         font-size: 15px;
         color: #5d5f60;
         line-height: initial;
@@ -356,7 +356,6 @@ export const Radio = styled.div`
     label {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         position: relative;
         padding: 10px 15px;
         height: 40px;
