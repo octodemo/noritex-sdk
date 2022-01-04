@@ -14,6 +14,10 @@ Regardless of the technologies and tools behind them, a successful design system
 
 -   **It’s robust**. No matter the product or platform to which your design system is applied, it should perform with grace and minimal bugs.
 
+## Docs
+
+[sdk.noritex.com](http://sdk.noritex.com)
+
 ## Install
 
     npm install noritex-sdk
@@ -34,7 +38,7 @@ Layout.js
         Modal,
         Preloader,
         Dropdown,
-        Breadcrumb,
+    Breadcrumb,~
         ArrowLeft,
         ArrowRight,
         Menu,
@@ -54,7 +58,7 @@ Layout.js
 
     import {
         Section,
-        Box,
+        Box,~
         Container,
         Row,
         Column,
