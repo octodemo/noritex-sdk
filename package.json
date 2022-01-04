@@ -1,6 +1,6 @@
 {
   "name": "noritex-sdk",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Styled Component SDK ",
   "main": "Elements.js",
   "directories": {

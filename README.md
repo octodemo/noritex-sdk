@@ -14,6 +14,10 @@ Regardless of the technologies and tools behind them, a successful design system
 
 -   **It’s robust**. No matter the product or platform to which your design system is applied, it should perform with grace and minimal bugs.
 
+## Install
+
+    npm install noritex-sdk
+
 ## 3 Files
 
 Elements.js
